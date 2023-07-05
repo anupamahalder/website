@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML tutorial for beginners">
+        <meta name="keywords" content="html,tutorial,beginners">
+        <meta name="author" content="Anupama">
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <meta http-equiv="refresh">
+    </head>
+    <body style="background-color: rgb(176, 220, 231);color: rgb(12, 10, 10);">
+        <!--This is the full website by using html-->
+        <h1>This is my Website</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eligendi iste quam ut expedita at, consectetur modi omnis, ipsum, nulla fuga deleniti consequuntur enim doloremque vitae. Consequuntur soluta libero perferendis esse accusantium et, ipsa officia nam nemo?<span style="color: red;"> Magnam quis enim distinctio dignissimos</span> dolores atque suscipit illum iure quo itaque rem pariatur sapiente nisi
+        <br>
+        quia quasi, nam quos maiores rerum consequuntur dolor aperiam eaque aut dicta. Deserunt ad ipsa natus amet, unde iure itaque culpa, eaque et assumenda, hic dolor voluptatem voluptatum quasi! Soluta ipsum quos harum sed blanditiis, repudiandae ipsa velit corporis quisquam aperiam temporibus odio, voluptate saepe doloremque neque?
+        </p>
+        <br>
+        <a href="https://www.google.com" target="_blank" title="It will open to Google">Google</a><br>
+        <a href="mailto:anupamahalder2022@gmail.com" target="_blank" title="Show it to page2">Send me Email</a>
+        <a href="https://www.google.com">
+        <img src="/imageFolder/img1.jpg" alt="Iffel Tower" width="400px" title="This is the view of Iffel Tower">
+        </a>
+        <hr>
+        Play Audio here <br>
+        <audio controls loop src="/audioFolder/feriha.mp3">
+            <source src="razmi.mp3">
+            <source src="razmi.w3v">
+            This browser doesnot support HTMLs audio
+        </audio>
+        <br>
+        <audio controls loop src="/audioFolder/razmi_song.mp3"></audio>
+        <hr>
+        <p><mark>Hello</mark> Lorem ipsum <ins>dolor </ins>dolor sit amet <del>Anupama Halder</del> consectetur adipisicing elit. Optio, aspernatur.</p>
+        Play Video here <br>
+        <video controls muted src="/videoFolder/tom.mp4" height="400px"></video>
+        <hr>
+        <iframe src="https://www.bing.com" frameborder="0" width="100%" height="500px"></iframe>
+        <hr>
+        <br>
+        <h4>This is unorderd list</h4>
+        <ul>
+            <li>Pizza</li>
+            <ul>
+                <li>Mushrooms</li>
+                <li>Pepers</li>
+                <li>Onion</li>
+            </ul>
+            <li>Burger</li>
+            <li>Cheese</li>
+            <li>Chicken fried</li>
+        </ul>
+        <h4>This is ordered list</h4>
+        <ol type="A">
+            <li>Eat breakfast</li>
+            <li>Take shower</li>
+            <li>Go to at work</li>
+        </ol>
+        <h4>This is description list</h4>
+        <dl>
+            <dt>HTML</dt>
+            <dd>This adds structure to a webpage</dd>
+            <dt>CSS</dt>
+            <dd>This adds style to a webpage</dd>
+            <dt>JavaScript</dt>
+            <dd>This adds functionality to a webpage</dd>
+        </dl>
+        <hr>
+        <h4>Table for Store Hours</h4>
+        <table bgcolor="black">
+            <tr bgcolor="grey">
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+            </tr>
+        </table>
+        <!-- <a href="https://www.google.com" target="_blank"> -->
+
+            <button onclick="doSomething()" style="background-color: rgb(174, 125, 219); border-radius: 5px;"><span id="test">Click Me</span></button>
+        <!-- </a> -->
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML="Goodbye"
+            }
+        </script>
+        <hr>
+        <h4>Now fill the form</h4>
+        <form action="action_page.php" method="POST">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter your name" required><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Enter your surname"><br>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" placeholder="Enter password"><br>
+            <label for="emailid">Email:</label>
+            <input type="email" id="emailid" placeholder="Enter your email"><br>
+            <input type="Reset"><br>
+            <input type="submit"><br>
+        </form>
+    </body>
+</html>
